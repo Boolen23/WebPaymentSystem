@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.31129.286
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebPaymentSystem", "WebPaymentSystem\WebPaymentSystem.csproj", "{B9834C07-454A-4820-901B-4946EE60A95A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccountSystem", "AccountSystem\AccountSystem.csproj", "{34631907-2871-414D-A593-658F4F8FFDAE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccountService", "Web\AccountService.csproj", "{8D2999BD-0E2D-4018-8F97-A2A15AF656EE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{B9834C07-454A-4820-901B-4946EE60A95A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B9834C07-454A-4820-901B-4946EE60A95A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B9834C07-454A-4820-901B-4946EE60A95A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{34631907-2871-414D-A593-658F4F8FFDAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{34631907-2871-414D-A593-658F4F8FFDAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{34631907-2871-414D-A593-658F4F8FFDAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{34631907-2871-414D-A593-658F4F8FFDAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D2999BD-0E2D-4018-8F97-A2A15AF656EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D2999BD-0E2D-4018-8F97-A2A15AF656EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D2999BD-0E2D-4018-8F97-A2A15AF656EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D2999BD-0E2D-4018-8F97-A2A15AF656EE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

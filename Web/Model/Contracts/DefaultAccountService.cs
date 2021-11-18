@@ -9,7 +9,13 @@ namespace AccountSystem.Model.Contracts
     {
         public string Authorize(string jsonData)
         {
-            throw new Exception(jsonData);
+            var t = AccountServiceModel.LoadAccounts();
+            return null;
+        }
+
+        public void AddTestData()
+        {
+            AccountServiceModel.GenerateAccounts();
         }
     }
 }
