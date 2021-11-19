@@ -7,7 +7,7 @@ using System.Text;
 using System.Web;
 using System.Xml.Serialization;
 
-namespace Web.Model
+namespace AccountSystem.Model
 {
     public static class Functions
     {

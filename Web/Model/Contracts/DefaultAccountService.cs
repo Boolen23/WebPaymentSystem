@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -9,8 +10,13 @@ namespace AccountSystem.Model.Contracts
     {
         public string Authorize(string jsonData)
         {
-            var t = AccountServiceModel.LoadAccounts();
-            return null;
+            var model = AccountServiceModel.LoadAccounts();
+            dynamic tmp = JsonConvert.DeserializeObject(jsonData);
+            var Account = AccountData.ByRawPassword((string)tmp.Login, (string)tmp.Password);
+            string MsgResult = string.Empty;
+            var IsOk = model.CheckIsExists(Account, out MsgResult);
+            var Response = new { IsOk = IsOk, Msg = MsgResult };
+            return JsonConvert.SerializeObject(Response);
         }
 
         public void AddTestData()
