@@ -22,8 +22,8 @@ namespace AccountSystem.Model
         {
             List<AccountData> GenerateData = new List<AccountData>();
             for (int i = 1; i < 10; i++)
-                GenerateData.Add(new AccountData() { Login = $"Nick{i}", Password = (i * 111).ToString().MD5Hash() });
-            Functions.WriteToXmlFile<List<AccountData>>(fileName, GenerateData);
+                GenerateData.Add(AccountData.ByRawPassword($"Nick{i}", (i * 111).ToString()));
+            Functions.WriteToXmlFile(fileName, GenerateData);
         }
         private List<AccountData> AccountList;
         public bool CheckIsExists(AccountData data, out string msg)

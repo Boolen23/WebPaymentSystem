@@ -7,6 +7,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using WebPaymentSystem.Db;
 
 namespace WebPaymentSystem
 {
@@ -23,6 +24,7 @@ namespace WebPaymentSystem
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+            services.AddTransient<IPaymentDataBase>(db => new PaymentData(Configuration.GetConnectionString("DefaultConnection")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -31,10 +33,6 @@ namespace WebPaymentSystem
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-            }
-            else
-            {
-                app.UseExceptionHandler("/Home/Error");
             }
             app.UseStaticFiles();
 
@@ -46,7 +44,7 @@ namespace WebPaymentSystem
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                    pattern: "{controller=WebPayment}/{action=Index}/{id?}");
             });
         }
     }
