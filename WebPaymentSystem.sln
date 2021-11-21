@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31129.286
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebPaymentSystem", "WebPaymentSystem\WebPaymentSystem.csproj", "{B9834C07-454A-4820-901B-4946EE60A95A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebPaymentSystem", "WebPaymentSystem\WebPaymentSystem.csproj", "{B9834C07-454A-4820-901B-4946EE60A95A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccountService", "Web\AccountService.csproj", "{8D2999BD-0E2D-4018-8F97-A2A15AF656EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccountServiceClient", "AccountServiceClient\AccountServiceClient.csproj", "{62826830-DD3E-4A69-ACB2-328F16F1DE89}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{8D2999BD-0E2D-4018-8F97-A2A15AF656EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8D2999BD-0E2D-4018-8F97-A2A15AF656EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8D2999BD-0E2D-4018-8F97-A2A15AF656EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62826830-DD3E-4A69-ACB2-328F16F1DE89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62826830-DD3E-4A69-ACB2-328F16F1DE89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62826830-DD3E-4A69-ACB2-328F16F1DE89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62826830-DD3E-4A69-ACB2-328F16F1DE89}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
